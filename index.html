@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini Rogue</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<style>
+      @keyframes bounce-in {
+        0% {
+          transform: translateX(-110%);
+          opacity: 0;
+        }
+        60% {
+          transform: translateX(5%);
+          opacity: 1;
+        }
+        80% {
+          transform: translateX(-2%);
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-out {
+        to {
+          transform: translateX(-110%);
+          opacity: 0;
+        }
+      }
+      .achievement-popup-enter {
+        animation: bounce-in 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      }
+      .achievement-popup-exit {
+        animation: slide-out 0.5s ease-in forwards;
+      }
+      @keyframes explosion-shockwave {
+        0% {
+          transform: scale(0);
+          opacity: 1;
+          border-width: 8px;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+          border-width: 1px;
+        }
+      }
+      @keyframes explosion-core {
+        0% {
+          transform: scale(0.8);
+          background-color: white;
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.2);
+          background-color: #fef08a; /* yellow-200 */
+          opacity: 0.8;
+        }
+        100% {
+          transform: scale(0);
+          background-color: #f97316; /* orange-500 */
+          opacity: 0;
+        }
+      }
+    </style>
+</head>
+  <body class="bg-gray-900 text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

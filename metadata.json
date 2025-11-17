@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Gemini Rogue（实验）",
+  "description": "A pixel-art roguelike shooter where defeating monsters can trigger Gemini to generate new, unique weapons for you to wield. Survive waves of enemies and upgrade your arsenal with AI-powered loot!",
+  "requestFramePermissions": []
+}
